@@ -1,0 +1,31 @@
+*
+{
+    padding: 3px;
+}
+div
+{
+    display: flex;
+    width: 600px;
+    border: 10px solid;
+    background-color: bisque;
+}
+p{
+    position: absolute;
+    accent-color: cadetblue;
+    margin: 0 100px;
+    font-family: "Caviar Dreams", serif;
+}
+
+.image-view
+{
+    border: 20px solid indianred;
+    height: 200px;
+    width: 200px;
+}
+li
+{
+    float: left;
+    display: flex;
+    margin:20px;
+    align-items: flex-end;
+}

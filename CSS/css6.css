@@ -1,0 +1,21 @@
+
+
+input
+{
+    background-image: url("images/square.png");
+    width: 500px;
+    height: 22px;
+    background-size: 25px;
+    -webkit-background-size: 23px;
+    border: none;
+    font-family: "Times New Roman",monospace;
+    font-size: 15px;
+    padding-left: 3px;
+    letter-spacing: 2.4ch;
+}
+
+#cnp
+{
+    width: 320px;
+    font-weight: bold;
+}

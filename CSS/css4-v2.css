@@ -1,0 +1,120 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 3px;
+    margin-left: 10px;
+}
+.container {
+    flex: 1;
+    overflow-y: auto; /* Allow container to scroll if content exceeds viewport */
+    padding-top: 100px; /* Adjusted for header height */
+    padding-bottom: 0px; /* Adjusted for footer height */
+    background-color: #f0f0f0;
+}
+.sprite-view{
+    display: flex;
+    flex-direction: row;
+    rotate: 90deg;
+    margin-top: 400px;
+}
+.sprite-view a{
+    width: 84px;
+    height: 84px;
+    background-image: url("images/css-pr4.png");
+    rotate: 0deg;
+    transform: rotate(-90deg);
+
+}
+#facebook{
+    background-position: 0px -84px
+}
+
+#facebook:hover{
+    background-position: 0px 0px
+}
+#flicker{
+    background-position: -84px -84px
+
+}
+#dribble{
+    background-position: -168px -84px
+
+}
+#google{
+    background-position: -252px -84px
+
+}
+#linkedin{
+    background-position: -336px -84px
+
+}
+#pinterest{
+    background-position: -420px -84px
+
+}
+#wifi{
+    background-position: -504px -84px
+
+}
+#skype{
+    background-position: -588px -84px
+
+}
+#twitter{
+    background-position: -672px -84px
+
+}
+#vim{
+    background-position: -756px -84px
+
+}
+#youtube
+{
+    background-position: -840px -84px
+
+}
+
+
+#flicker:hover{
+    background-position: -84px 0px
+
+}
+#dribble:hover{
+    background-position: -168px 0px
+
+}
+#google:hover{
+    background-position: -252px 0px
+
+}
+#linkedin:hover{
+    background-position: -336px 0px
+
+}
+#pinterest:hover{
+    background-position: -420px 0px
+
+}
+#wifi:hover{
+    background-position: -504px 0px
+
+}
+#skype:hover{
+    background-position: -588px 0px
+
+}
+#twitter:hover{
+    background-position: -672px 0px
+
+}
+#vim:hover{
+    background-position: -756px 0px
+
+}
+#youtube:hover
+{
+    background-position: -840px 0px
+
+}

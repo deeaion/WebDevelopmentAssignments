@@ -1,0 +1,26 @@
+/* styles.css */
+#verticalTable {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: azure;
+}
+
+#verticalTable th, #verticalTable td {
+    border: 1px solid darkseagreen;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    cursor: pointer; /* Indicates that the header is clickable */
+}
+#verticalTable th{
+    background-color: darkseagreen;
+    color: white;
+}
+/* Add some styles to indicate the sorted state */
+.asc::after {
+    content: " \2191"; /* Upwards arrow */
+}
+
+.desc::after {
+    content: " \2193"; /* Downwards arrow */
+}

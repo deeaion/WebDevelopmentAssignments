@@ -1,0 +1,101 @@
+.pageTitle{
+    text-decoration-color: peachpuff;
+    outline-width: 10px;
+    outline-color: cornflowerblue ;
+    border: rosybrown 1px solid;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.carouselContainer{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+#carousel .a{
+    position: static;
+    width: 50%;
+    height: 50%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: rosybrown;
+
+}
+#carousel .item {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 50%; /* Adjusted to fill the container */
+    opacity: 0; /* Start fully transparent */
+    border-radius: 10px;
+    border: rosybrown;
+}
+
+
+#carousel .item.fade {
+    display: block;
+    opacity: 1;
+
+    animation: fadeIn 2s
+}
+#carousel .item.fadeOut{
+    animation: fadeOut 1s;
+}
+
+#carousel .item img {
+    width: 100%;
+
+}
+
+
+
+.item:first-child {
+    display: block;
+}
+button {
+    position: absolute;
+    top: 50%;
+    /*transform: translateY(-50%);*/
+    background-color: pink;
+    border: 1px solid pink;
+    border-radius: 50%;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 20px;
+    top: 40%;
+}
+
+#next {
+    right: 230px;
+    top: 40%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

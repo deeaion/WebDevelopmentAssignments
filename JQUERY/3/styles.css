@@ -1,0 +1,22 @@
+table{
+    border-collapse:collapse;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+td{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size : 15px;
+    cursor: pointer;
+}
+
+.hidden{
+    background-color: darkseagreen;
+    color: darkseagreen;
+}

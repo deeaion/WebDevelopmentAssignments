@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+}
+
+header, footer {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    background-color: indianred;
+    position: fixed;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+}
+
+.container {
+    flex: 1;
+    overflow-y: auto; /* Allow container to scroll if content exceeds viewport */
+    padding-top: 100px; /* Adjusted for header height */
+    padding-bottom: 0px; /* Adjusted for footer height */
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: darkseagreen;
+}
+
+.horizontal-menu {
+    position: fixed;
+    top: 90px; /* Adjusted for header height */
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: powderblue;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.horizontal-menu li {
+    margin-right: 20px;
+}
+
+.horizontal-menu a {
+    background-color: powderblue;
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.horizontal-menu a:hover {
+    background-color: mediumpurple;
+}
+
+.horizontal-menu a.active {
+    background-color: cadetblue;
+    color: white;
+}

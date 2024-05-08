@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh; /* Ensure the body takes up the entire viewport height */
+}
+
+header, footer {
+    width: 100%;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* Ensure the header and footer appear above other content */
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+.container {
+    flex: 1;
+    overflow-y: auto;
+    padding-top: 120px; /* Adjusted to accommodate the fixed header and menu height */
+    padding-bottom: 30px;
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.horizontal-menu {
+    position: fixed; /* Fixed position */
+    top: 99px; /* Adjusted to accommodate the fixed header height */
+    left: 0; /* Align to the left */
+    width: 150%; /* Take full width */
+    background-color: powderblue;
+    overflow-y: hidden; /* Enable scrolling if content exceeds menu height */
+    margin: 0; /* Remove default margin */
+    z-index: 1500; /* Ensure the menu appears above the header */
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    padding: 6px;
+    margin: 0;
+    display: flex; /* Make the menu items horizontal */
+}
+
+.horizontal-menu li {
+    margin-right: 20px; /* Add some spacing between menu items */
+}
+
+.horizontal-menu a {
+    background-color: powderblue;
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.horizontal-menu a:hover {
+    background-color: mediumpurple;
+}
+
+.horizontal-menu a.active {
+    background-color: cadetblue;
+    color: white;
+}

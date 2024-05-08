@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    display: flex;
+    /*flex-direction: column;*/
+    min-height: 100vh; /* Ensure the body takes up the entire viewport height */
+}
+
+header, footer {
+    width: 100%;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Fixed position */
+    z-index: 1000; /* Ensure the header and footer appear above other content */
+}
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+.container {
+    flex: 1;
+    overflow-y: auto;
+    padding-top: 100px; /* Adjusted to accommodate the fixed header and menu height */
+    padding-bottom: 60px;
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+}
+.vertical-menu
+{
+    position: fixed; /* Fixed position */
+    top:99px;
+    height: 90vh; /* Full height of the viewport */
+    width: 200px; /* Adjust the width as needed */
+    background-color: powderblue;
+    padding-top: 60px; /* Adjust according to header height */
+    overflow-y: auto; /* Enable scrolling if content exceeds menu height */
+    margin: 0; /* Remove default margin */
+}
+.vertical-menu a{
+    background-color: powderblue;
+    color:black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.vertical-menu a:hover
+{
+    background-color:mediumpurple;
+}
+.vertical-menu a.active
+{
+    background-color: cadetblue;
+    color:white;
+}

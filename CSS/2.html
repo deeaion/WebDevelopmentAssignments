@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Structure</title>
+    <link rel="stylesheet" href="css2-v1.css"> <!-- Fișierul CSS pentru meniul orizontal --><!-- Fișierul CSS pentru meniul vertical -->
+    <style>
+        .parent-div {
+            border: 2px solid purple;
+            border-radius: 3px;
+            display: flex; /*container flexibil*/
+            width: fit-content;
+        }
+
+        .left-part {
+            width: 200px;
+            display: flex;
+            align-content: center;
+            text-align: center;
+        }
+
+        .text-view {
+            font-family: "Caviar Dreams", serif;
+            font-size: 9px;
+            font-weight: bolder;
+            color: darkslategrey;
+        }
+
+        .text-headline {
+            font-family: "Caviar Dreams", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: darkslateblue;
+        }
+
+        .right-part {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Titlul Site-ului</h1>
+</header>
+
+
+<!-- Alternatively, you can use the vertical menu by switching the class -->
+<!--&lt;!&ndash; <nav class="vertical-menu"> &ndash;&gt;-->
+<!--<nav class="vertical-menu">-->
+<!--    <ul>-->
+<!--        <li><a href="#">Acasă</a></li>-->
+<!--        <li><a href="#">Despre</a></li>-->
+<!--        <li><a href="#">Servicii</a></li>-->
+<!--        <li><a href="#">Contact</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+<div class="container">
+<nav class="vertical-menu">
+    <ul>
+        <li><a href="1.html">Problema 1</a></li>
+        <li><a href="2v2.html">Problema 2v2</a></li>
+        <li><a href="3.html">Problema 3</a></li>
+        <li><a href="4.html">Problema 4</a></li>
+        <li><a href="5.html">Problema 5</a></li>
+        <li><a href="5v2.html">Problema 5v2</a></li>
+        <li><a href="6.html">Problema 6</a></li>
+        <li><a href="7.html">Problema 7</a></li>
+    </ul>
+</nav>
+<div class="main-content">
+
+    <div class="parent-div">
+        <!-- stanga unde e text -->
+        <div class="left-part">
+            <p class="text-headline">Internet Memes: An Overview.</p> <br>
+            <p class="text-view"> An internet meme is a piece of content, often humorous, that is quickly replicated
+                and shared across the internet, undergoing variations in the process.</p>
+        </div>
+        <div class="right-part">
+            <img src="images/meme-1.jpg" alt="Normal meme on the internet :(" title="MEME">
+
+        </div>
+    </div>
+    <div class="parent-div">
+        <!-- stanga unde e text -->
+        <div class="left-part">
+            <p class="text-headline">Internet Memes: An Overview.</p> <br>
+            <p class="text-view"> An internet meme is a piece of content, often humorous, that is quickly replicated
+                and shared across the internet, undergoing variations in the process.</p>
+        </div>
+        <div class="right-part">
+            <img src="images/meme-2.jpg" alt="Normal meme on the internet :(" title="MEME">
+
+        </div>
+    </div>
+    <div class="parent-div">
+        <!-- stanga unde e text -->
+        <div class="left-part">
+            <p class="text-headline">Internet Memes: An Overview.</p> <br>
+            <p class="text-view"> An internet meme is a piece of content, often humorous, that is quickly replicated
+                and shared across the internet, undergoing variations in the process.
+                What lies at the heart of every living thing is not a fire, not warm breath, not a ‘spark of life.’ It
+                is information, words, instructions,” Richard Dawkins declared in 1986.
+                Already one of the world’s foremost evolutionary biologists, he had caught the spirit of a new age. The
+                cells of an organism are nodes in a richly interwoven communications network, transmitting and receiving,
+                coding and decoding. Evolution itself embodies an ongoing exchange of information between organism and
+                environment.</p>
+
+        </div>
+        <div class="right-part">
+            <img src="images/meme-3.jpeg" alt="Normal meme on the internet :(" title="MEME">
+
+        </div>
+    </div>
+</div></div>
+<footer>
+    <p>Drepturi de autor &copy; 2024 Numele Companiei</p>
+</footer>
+</body>
+</html>

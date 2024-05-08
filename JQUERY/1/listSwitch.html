@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transferring Elements Between Lists</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        select {
+            width: 200px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <select id="FirstList" multiple="multiple" ondblclick="moveObject('FirstList', 'SecondList')">
+        <option value="option1">hah</option>
+        <option value="option2">haaah</option>
+        <option value="option3">haeh</option>
+        <option value="option4">haeh</option>
+        <option value="option5">haeh</option>
+    </select>
+</ul>
+<ul>
+    <select id="SecondList" multiple="multiple" ondblclick="moveObject('SecondList', 'FirstList')">
+        <option value="option6">aaaahah</option>
+        <option value="option7">haaaaaaaaaaaaaaaah</option>
+        <option value="option8">haeaaah</option>
+        <option value="option9">haaaaaaaaaaeh</option>
+        <option value="option10">haaaaaaaaaaeh</option>
+    </select>
+    <script src="script.js"></script>
+</ul>
+</body>
+</html>
