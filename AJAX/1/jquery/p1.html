@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Destinations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="fetchData.js"></script>
+</head>
+<body>
+<h1>Find destinations for your train</h1>
+<div class="container">
+    <h1>Train Stations</h1>
+    <div class="stations">
+        <label for="departure">Statii de Plecare</label>
+        <select id="departure" onchange="updateArrival()">
+            <option value="">Selecteaza o statie de plecare</option>
+        </select>
+    </div>
+    <div class="arrivals">
+        <label for="arrival">Statii de Sosire</label>
+        <ul id="arrival"></ul>
+    </div>
+</div>
+</body>
+</html>

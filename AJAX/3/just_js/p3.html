@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="form.js"></script>
+    <style >
+        #saveBtn:disabled {
+            background-color: grey;
+        }
+        .id_list{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Database
+    </h1>
+    <div class="id_list">
+        <label for="idList" > Select by ID: </label>
+        <select id="idList" onchange="selectById()">
+            <option value="">Select an ID</option>
+    </select>
+    </div>
+    <div class="email_list">
+        <label for="emailList"> Select by Email: </label>
+        <select id="emailList" onchange="selectByEmail()">
+            <option value="">Select an Email</option>
+        </select>
+    </div>
+    <div class="form">
+        <form id="userForm" oninput="enableSaveButton()">
+            <input type="hidden" id="itemId">
+            <div>
+                <label for="LastName">Name:</label>
+                <input type="text" id="LastName" name="LastName" required>
+            </div>
+            <div>
+                <label for="FirstName">First Name:</label>
+                <input type="text" id="FirstName" name="FirstName" required>
+            </div>
+            <div>
+                <label for="Phone">Phone:</label>
+                <input type="text" id="Phone" name="Phone" required>
+
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" required disabled>
+            </div>
+            <div>
+                <button type="button" id="saveBtn" onclick="saveUser()">Save</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

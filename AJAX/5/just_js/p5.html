@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree-View Component</title>
+  <style>
+    .tree-view {
+      float: left;
+      width: 30%;
+      padding-right: 20px;
+      border-right: 1px solid #ccc;
+      align-content: baseline;
+    }
+    .body{
+      display: compact;
+    }
+    .file-content {
+      float: left;
+      top:0px;
+      width: 70%;
+      margin-left: 34%;
+    }
+
+    .tree-view ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    .tree-view li {
+      cursor: pointer;
+    }
+    .selected > ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<div id="tree-view" class="tree-view"></div>
+<div id="file-content" class="file-content"></div>
+
+<script src="tree-view.js"></script>
+</body>
+</html>

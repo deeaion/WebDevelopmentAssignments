@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.stations, .arrivals {
+    border: 1px solid cadetblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.stations label, .arrivals label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.arrivals ul {
+    list-style-type: square;
+    padding: 0;
+}
+
+.arrivals li {
+    padding: 5px 0;
+}

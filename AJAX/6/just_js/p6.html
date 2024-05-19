@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Shop</title>
+</head>
+<body>
+<h1>Filtrează Notebook-urile</h1>
+<form id="filterForm">
+    <label for="manufacturer">Producător:</label>
+    <select id="manufacturer" name="manufacturer">
+        <option value="">Toți</option>
+        <option value="Dell">Dell</option>
+        <option value="HP">HP</option>
+        <option value="Asus">Asus</option>
+        <!-- Adăugați mai mulți producători după cum este necesar -->
+    </select>
+
+    <label for="processor">Procesor:</label>
+    <select id="processor" name="processor">
+        <option value="">Toți</option>
+        <option value="Intel">Intel</option>
+        <option value="AMD">AMD</option>
+        <!-- Adăugați mai multe procesoare după cum este necesar -->
+    </select>
+
+    <label for="memory">Memorie:</label>
+    <select id="memory" name="memory">
+        <option value="">Toată</option>
+        <option value="8GB">8GB</option>
+        <option value="16GB">16GB</option>
+        <!-- Adăugați mai multe opțiuni după cum este necesar -->
+    </select>
+
+    <label for="hdd">Capacitate HDD:</label>
+    <select id="hdd" name="hdd">
+        <option value="">Toate</option>
+        <option value="512GB">512GB</option>
+        <option value="1TB">1TB</option>
+        <!-- Adăugați mai multe opțiuni după cum este necesar -->
+    </select>
+
+    <label for="graphics">Placa Video:</label>
+    <select id="graphics" name="graphics">
+        <option value="">Toate</option>
+        <option value="Nvidia">Nvidia</option>
+        <option value="AMD">AMD</option>
+        <!-- Adăugați mai multe opțiuni după cum este necesar -->
+    </select>
+
+    <button type="button" id="filterButton">Filtrează</button>
+</form>
+
+<h2>Rezultate:</h2>
+<div id="results"></div>
+
+<script>
+    document.getElementById('filterButton').addEventListener('click', function() {
+        const form = document.getElementById('filterForm');
+        const formData = new FormData(form);
+        const queryString = new URLSearchParams(formData).toString();
+
+        fetch('filter.php?' + queryString)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('results').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+    });
+</script>
+</body>
+</html>
